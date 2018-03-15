@@ -107,7 +107,7 @@ show_images([image,result],['Original Image','Vehicle boxed Image'],cols = 2)
 ```
 
 
-![png](output_7_0.png)
+![png](resources/output_7_0.png)
 
 
 ## Template Matching
@@ -138,7 +138,7 @@ show_images(templistread(templist),len(templist)*['Template'],cols = len(templis
 ```
 
 
-![png](output_11_0.png)
+![png](resources/output_11_0.png)
 
 
 ### Template matched show
@@ -183,7 +183,7 @@ show_images([image,result],['Original Image','matched Image'],cols = 2)
 ```
 
 
-![png](output_13_0.png)
+![png](resources/output_13_0.png)
 
 
 ## Histograms of Color
@@ -233,11 +233,11 @@ else:
 ```
 
 
-![png](output_16_0.png)
+![png](resources/output_16_0.png)
 
 
 
-![png](output_16_1.png)
+![png](resources/output_16_1.png)
 
 
 ## Explore Color Spaces
@@ -296,15 +296,15 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
+![png](resources/output_18_0.png)
 
 
 
-![png](output_18_1.png)
+![png](resources/output_18_1.png)
 
 
 
-![png](output_18_2.png)
+![png](resources/output_18_2.png)
 
 
 ## Spatial Binning of Color
@@ -350,7 +350,7 @@ plt.title('Spatially Binned Features')
 ```
 
 
-![png](output_20_0.png)
+![png](resources/output_20_0.png)
 
 
 
@@ -361,7 +361,7 @@ plt.title('Spatially Binned Features')
 
 
 
-![png](output_20_2.png)
+![png](resources/output_20_2.png)
 
 
 ## Data Exploration
@@ -438,11 +438,11 @@ show_images(notcar_image,showlen * ['Example Not-car Image'],cols = showlen)
     
 
 
-![png](output_22_1.png)
+![png](resources/output_22_1.png)
 
 
 
-![png](output_22_2.png)
+![png](resources/output_22_2.png)
 
 
 ## HOG Feature
@@ -485,11 +485,11 @@ show_images(car_hog_image,showlen * ['HOG Visualization'],cols = showlen)
 ```
 
 
-![png](output_24_0.png)
+![png](resources/output_24_0.png)
 
 
 
-![png](output_24_1.png)
+![png](resources/output_24_1.png)
 
 
 ## Combine and Normalize Features
@@ -577,7 +577,7 @@ else:
 ```
 
 
-![png](output_27_0.png)
+![png](resources/output_27_0.png)
 
 
 ## Color Classify
@@ -1124,7 +1124,7 @@ plt.imshow(window_img)
 
 
 
-![png](output_47_1.png)
+![png](resources/output_47_1.png)
 
 
 ## Search and Classify
@@ -1249,7 +1249,7 @@ plt.imshow(window_img)
 
 
 
-![png](output_50_1.png)
+![png](resources/output_50_1.png)
 
 
 ## Hog Sub-sampling Window Search
@@ -1364,19 +1364,19 @@ show_images([clip_img,out_img],['Cliped Image','Searched Image'],cols = 2,tickss
 ```
 
 
-![png](output_55_0.png)
+![png](resources/output_55_0.png)
 
 
 
-![png](output_55_1.png)
+![png](resources/output_55_1.png)
 
 
 
-![png](output_55_2.png)
+![png](resources/output_55_2.png)
 
 
 
-![png](output_55_3.png)
+![png](resources/output_55_3.png)
 
 
 ## Find cars
@@ -1644,19 +1644,19 @@ find_car_heatmap(img, ystart, ystop, scale, svc, X_scaler,\
 ```
 
 
-![png](output_61_0.png)
+![png](resources/output_61_0.png)
 
 
 
-![png](output_61_1.png)
+![png](resources/output_61_1.png)
 
 
 
-![png](output_61_2.png)
+![png](resources/output_61_2.png)
 
 
 
-![png](output_61_3.png)
+![png](resources/output_61_3.png)
 
 
 ## Define Vechile dectect Class
@@ -1776,27 +1776,27 @@ for i, image in enumerate(test_images):
 ```
 
 
-![png](output_65_0.png)
+![png](resources/output_65_0.png)
 
 
 
-![png](output_65_1.png)
+![png](resources/output_65_1.png)
 
 
 
-![png](output_65_2.png)
+![png](resources/output_65_2.png)
 
 
 
-![png](output_65_3.png)
+![png](resources/output_65_3.png)
 
 
 
-![png](output_65_4.png)
+![png](resources/output_65_4.png)
 
 
 
-![png](output_65_5.png)
+![png](resources/output_65_5.png)
 
 
 ## Test on Videos
@@ -1838,27 +1838,6 @@ line_clip = clip1.fl_image(L.vechile_find) #NOTE: this function expects color im
     
     Wall time: 17min 40s
     
-
-
-```python
-HTML("""
-<video width="960" height="450" controls>
-  <source src="{0}">
-</video>
-""".format(project_output))
-```
-
-
-
-
-
-<video width="960" height="450" controls>
-  <source src="test_videos_output/project_video_output.mp4">
-</video>
-
-
-
-
 
 ```python
 line_clip.resize(height=240).speedx(5).to_gif('resources/project.gif')
